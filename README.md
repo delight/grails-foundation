@@ -40,7 +40,7 @@ grails install-plugin foundation
 
 Usage:
 ---
-You probably wan't to use this plugin in conjunction with the resources plugin http://grails.org/plugin/resources. 
+You probably wan't to use this plugin in conjunction with the resources plugin http://grails.org/plugin/resources
 
 Use the resources TagLib to include the foundation module in your gsp.
 
