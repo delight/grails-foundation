@@ -1,0 +1,6 @@
+/plugin.xml
+grails-*.zip
+target/
+c.tld
+fmt.tld
+.DS_Store
