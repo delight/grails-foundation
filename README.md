@@ -48,7 +48,7 @@ Use the resources TagLib to include the foundation module in your gsp.
 
 Versioning
 ---
-Plugin version convetion is 
+Plugin version convention is 
 
 	<foundationframework-version>.<plugin-minor-for-fixes>
 
