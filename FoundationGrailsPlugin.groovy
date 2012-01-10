@@ -25,7 +25,7 @@ class FoundationGrailsPlugin {
         "grails-app/views/error.gsp"
     ]
 
-    def title = "Foundation CSS Framework for grails"
+    def title = "Foundation CSS Framework for Grails"
     def author = "Konstantinos Kostarellis"
     def authorEmail = "kosta@shortmail.me"
     def description = '''\
