@@ -6,7 +6,7 @@ modules = {
     'foundation-global' {
         defaultBundle configDefaultBundle
 
-        resource url:[plugin: 'foundation', dir: 'css', file: 'global.css'], disposition: 'head'
+        resource url:[plugin: 'foundation', dir: 'css', file: 'globals.css'], disposition: 'head'
     }
 
     'foundation-typography' {
