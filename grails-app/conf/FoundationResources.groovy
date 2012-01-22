@@ -3,7 +3,7 @@ def configDefaultBundle = 'bundle_foundation'
 
 modules = {
 
-    'foundation-global' {
+    'foundation-globals' {
         defaultBundle configDefaultBundle
 
         resource url:[plugin: 'foundation', dir: 'css', file: 'globals.css'], disposition: 'head'
@@ -11,36 +11,42 @@ modules = {
 
     'foundation-typography' {
         defaultBundle configDefaultBundle
+        dependsOn 'foundation-globals'
 
         resource url:[plugin: 'foundation', dir: 'css', file: 'typography.css'], disposition: 'head'
     }
 
     'foundation-grid' {
         defaultBundle configDefaultBundle
+        dependsOn 'foundation-typography'
 
         resource url:[plugin: 'foundation', dir: 'css', file: 'grid.css'], disposition: 'head'
     }
 
     'foundation-ui' {
         defaultBundle configDefaultBundle
+        dependsOn 'foundation-grid'
 
         resource url:[plugin: 'foundation', dir: 'css', file: 'ui.css'], disposition: 'head'
     }
 
     'foundation-forms' {
         defaultBundle configDefaultBundle
+        dependsOn 'foundation-ui'
 
         resource url:[plugin: 'foundation', dir: 'css', file: 'forms.css'], disposition: 'head'
     }
 
     'foundation-orbit' {
         defaultBundle configDefaultBundle
+        dependsOn 'foundation-forms'
 
         resource url:[plugin: 'foundation', dir: 'css', file: 'orbit.css'], disposition: 'head'
     }
 
     'foundation-reveal' {
         defaultBundle configDefaultBundle
+        dependsOn 'foundation-orbit'
 
         resource url:[plugin: 'foundation', dir: 'css', file: 'reveal.css'], disposition: 'head'
     }
@@ -48,6 +54,7 @@ modules = {
 
     'foundation-mobile' {
         defaultBundle configDefaultBundle
+        dependsOn 'foundation-reveal'
 
         resource url:[plugin: 'foundation', dir: 'css', file: 'mobile.css'], disposition: 'head'
     }
@@ -55,7 +62,7 @@ modules = {
     'foundation-ie' {
         defaultBundle configDefaultBundle
 
-        resource url:[plugin: 'foundation', dir: 'css', file: 'ie.css'], disposition: 'head'
+        resource url:[plugin: 'foundation', dir: 'css', file: 'ie.css'], wrapper: { s -> "<!--[if lt IE 9]>$s<![endif]-->" }, disposition: 'head'
     }
 
     // -- End CSS -- Begin JS Resources
@@ -92,8 +99,7 @@ modules = {
 
     'foundation-css' {
         defaultBundle configDefaultBundle
-        
-        dependsOn 'foundation-global, foundation-typography, foundation-grid, foundation-ui, foundation-forms, foundation-orbit, foundation-reveal, foundation-mobile'
+        dependsOn 'foundation-mobile'
         dependsOn 'foundation-ie'
     }
 

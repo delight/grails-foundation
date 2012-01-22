@@ -15,7 +15,7 @@
  */
 class FoundationGrailsPlugin {
     // the plugin version
-    def version = "2.1.4.1"
+    def version = "2.1.4.2"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3 > *"
     // the other plugins this plugin depends on
