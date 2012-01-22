@@ -97,6 +97,12 @@ modules = {
         resource url:[plugin: 'foundation', dir: 'js', file: 'jquery.placeholder.js'], disposition: 'head'
     }
 
+    'foundation-app-js' {
+        defaultBundle configDefaultBundle
+        dependsOn 'jquery'
+        resource url:[plugin: 'foundation', dir: 'js', file: 'app.js'], disposition: 'head'
+    }
+
     'foundation-css' {
         defaultBundle configDefaultBundle
         dependsOn 'foundation-mobile'
@@ -106,7 +112,7 @@ modules = {
     'foundation-js' {
         defaultBundle configDefaultBundle
         dependsOn 'jquery'
-        dependsOn 'foundation-reveal-js,foundation-orbit-js,foundation-forms-js,foundation-customforms-js,foundation-placeholder-js,'
+        dependsOn 'foundation-reveal-js,foundation-orbit-js,foundation-forms-js,foundation-customforms-js,foundation-placeholder-js,foundation-app-js'
     }
 
     foundation {
