@@ -14,7 +14,7 @@
   <title>Welcome to Foundation</title>
   
   <!-- Included CSS % JS Files (Compressed) -->
-  <r:require modules="foundation-css, foundation-app-js" />
+  <r:require module="foundation" />
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>

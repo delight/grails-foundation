@@ -120,11 +120,11 @@ modules = {
 //        dependsOn 'foundation-app-js, foundation-jquery-accordion, foundation-jquery-alerts, foundation-jquery-buttons, foundation-jquery-clearing, foundation-jquery-forms, foundation-jquery-joyride, foundation-jquery-magellan, foundation-jquery-media_query_toggle, foundation-jquery-navigation, foundation-jquery-orbit, foundation-jquery-reveal, foundation-jquery-tabs, foundation-jquery-tooltips, foundation-jquery-topbar, jquery-placeholder'
 //    }
 //
-//    'foundation' {
-//        dependsOn 'foundation-css'
-//        if (jqueryPlugin) {
-//            dependsOn 'foundation-js'
-//        }
-//    }
+    'foundation' {
+        dependsOn 'foundation-css'
+        if (jqueryPlugin) {
+            dependsOn 'foundation-app-js'
+        }
+    }
        
 }
