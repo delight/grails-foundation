@@ -50,7 +50,7 @@ Versioning
 ---
 Plugin version convention is 
 
-	<foundationframework-version>.<plugin-minor-for-fixes>
+	<foundationframework-version>.<plugin-minor-for-fixes> => <3.2.2>.<1>
 
 Copyright and License
 ---
