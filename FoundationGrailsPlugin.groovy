@@ -15,21 +15,22 @@
  */
 class FoundationGrailsPlugin {
     // the plugin version
-    def version = "2.1.4.3"
+    def version = "3.2.5.1"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3 > *"
     // the other plugins this plugin depends on
     def dependsOn = [:]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
-        "grails-app/views/error.gsp"
+        "grails-app/views/error.gsp",
+        "grails-app/views/foundation.gsp"
     ]
 
     def title = "Foundation CSS Framework for Grails"
-    def author = "Konstantinos Kostarellis"
-    def authorEmail = "kosta@shortmail.me"
+    def author = "Konstantinos Kostarellis, Tomas Metz"
+    def authorEmail = "kosta@shortmail.me, tomas@metzovi.net"
     def description = '''\
-Plugin that provides the Foundation CSS framework resources. Foundation is an easy to use, powerful, and flexible framework for building prototypes and production code on any kind of device.
+Plugin provides the Foundation CSS framework resources. Foundation is an easy to use, powerful, and flexible framework for building prototypes and production code on any kind of device.
 It integrates nicely with the resources plugin.
 '''
 
