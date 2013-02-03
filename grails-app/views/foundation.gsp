@@ -28,7 +28,7 @@
   <div class="row">
     <div class="twelve columns">
       <h2>Welcome to Foundation</h2>
-      <p>This is version <strong>3.2.2</strong> generated on November 10, 2012.</p>
+      <p>This is version <strong>3.2.5</strong> generated on January 26, 2013.</p>
       <hr />
     </div>
   </div>
