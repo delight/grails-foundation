@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Konstantinos Kostarellis.
+ * Copyright 2012-2013 Konstantinos Kostarellis.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,9 @@
  */
 class FoundationGrailsPlugin {
     // the plugin version
-    def version = "2.1.4.3"
+    def version = "5.0.2"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3 > *"
-    // the other plugins this plugin depends on
-    def dependsOn = [:]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
         "grails-app/views/error.gsp"
@@ -27,7 +25,7 @@ class FoundationGrailsPlugin {
 
     def title = "Foundation CSS Framework for Grails"
     def author = "Konstantinos Kostarellis"
-    def authorEmail = "kosta@shortmail.me"
+    def authorEmail = "kosta.grails@gmail.com"
     def description = '''\
 Plugin that provides the Foundation CSS framework resources. Foundation is an easy to use, powerful, and flexible framework for building prototypes and production code on any kind of device.
 It integrates nicely with the resources plugin.
@@ -40,6 +38,12 @@ It integrates nicely with the resources plugin.
 
     // License: one of 'APACHE', 'GPL2', 'GPL3'
     def license = "APACHE"
+
+    // Details of company behind the plugin (if there is one)
+//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
+
+    // Any additional developers beyond the author specified above.
+//    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
 
     // Location of the plugin's issue tracker.
     def issueManagement = [ system: "GITHUB", url: "https://github.com/delight/grails-foundation/issues" ]
@@ -59,7 +63,7 @@ It integrates nicely with the resources plugin.
         // TODO Implement registering dynamic methods to classes (optional)
     }
 
-    def doWithApplicationContext = { applicationContext ->
+    def doWithApplicationContext = { ctx ->
         // TODO Implement post initialization spring config (optional)
     }
 

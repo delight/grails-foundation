@@ -46,6 +46,8 @@ Use the resources TagLib to include the foundation module in your gsp.
 
 	<r:require module="foundation" />
 
+For full functionality you will need the jquery plugin http://grails.org/plugin/jquery in your app (which is the default with current grails versions).
+
 Versioning
 ---
 Plugin version convention is 
@@ -57,7 +59,7 @@ Copyright and License
 
 foundation plugin:
 
-Copyright © 2012 Konstantinos Kostarellis
+Copyright © 2012-2013 Konstantinos Kostarellis
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
