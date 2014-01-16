@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2013 Konstantinos Kostarellis.
+ * Copyright 2012-2014 Konstantinos Kostarellis.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 class FoundationGrailsPlugin {
-    def version = "5.0.2"
+    def version = "5.0.3"
     def grailsVersion = "1.3 > *"
     def title = "Foundation CSS Framework for Grails"
     def description = '''\
