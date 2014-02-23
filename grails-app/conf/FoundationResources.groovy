@@ -40,6 +40,12 @@ modules = {
         resource url:[plugin: 'foundation', dir: 'js', file: 'foundation.dropdown.js'], disposition: 'defer'
     }
 
+    'foundation-equalizer-js' {
+        defaultBundle configDefaultBundle
+        dependsOn 'jquery'
+        resource url:[plugin: 'foundation', dir: 'js', file: 'foundation.equalizer.js'], disposition: 'defer'
+    }
+
 	'foundation-interchange-js' {
         defaultBundle configDefaultBundle
         dependsOn 'jquery'
@@ -98,7 +104,7 @@ modules = {
         defaultBundle configDefaultBundle
         dependsOn 'jquery'
         if (dev) {
-        	dependsOn 'foundation-abide-js,foundation-accordion-js,foundation-alert-js,foundation-clearing-js,foundation-dropdown-js,foundation-interchange-js,foundation-joyride-js,foundation-magellan-js,foundation-offcanvas-js,foundation-orbit-js,foundation-reveal-js,foundation-tab-js,foundation-tooltip-js,foundation-topbar-js'
+        	dependsOn 'foundation-abide-js,foundation-accordion-js,foundation-alert-js,foundation-clearing-js,foundation-dropdown-js,foundation-equalizer-js,foundation-interchange-js,foundation-joyride-js,foundation-magellan-js,foundation-offcanvas-js,foundation-orbit-js,foundation-reveal-js,foundation-tab-js,foundation-tooltip-js,foundation-topbar-js'
         } else {
         	resource url:[plugin: 'foundation', dir: 'js', file: 'foundation.min.js'], disposition: 'defer'
         }
