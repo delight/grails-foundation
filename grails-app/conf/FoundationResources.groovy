@@ -82,6 +82,12 @@ modules = {
         resource url:[plugin: 'foundation', dir: 'js', file: 'foundation.reveal.js'], disposition: 'defer'
     }
 
+    'foundation-slider-js' {
+        defaultBundle configDefaultBundle
+        dependsOn 'jquery'
+        resource url:[plugin: 'foundation', dir: 'js', file: 'foundation.slider.js'], disposition: 'defer'
+    }
+
 	'foundation-tab-js' {
         defaultBundle configDefaultBundle
         dependsOn 'jquery'
@@ -104,7 +110,7 @@ modules = {
         defaultBundle configDefaultBundle
         dependsOn 'jquery'
         if (dev) {
-        	dependsOn 'foundation-abide-js,foundation-accordion-js,foundation-alert-js,foundation-clearing-js,foundation-dropdown-js,foundation-equalizer-js,foundation-interchange-js,foundation-joyride-js,foundation-magellan-js,foundation-offcanvas-js,foundation-orbit-js,foundation-reveal-js,foundation-tab-js,foundation-tooltip-js,foundation-topbar-js'
+        	dependsOn 'foundation-abide-js,foundation-accordion-js,foundation-alert-js,foundation-clearing-js,foundation-dropdown-js,foundation-equalizer-js,foundation-interchange-js,foundation-joyride-js,foundation-magellan-js,foundation-offcanvas-js,foundation-orbit-js,foundation-reveal-js,foundation-slider-js,foundation-tab-js,foundation-tooltip-js,foundation-topbar-js'
         } else {
         	resource url:[plugin: 'foundation', dir: 'js', file: 'foundation.min.js'], disposition: 'defer'
         }
