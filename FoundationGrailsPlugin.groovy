@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 class FoundationGrailsPlugin {
-    def version = "5.2.0"
+    def version = "5.2.1"
     def grailsVersion = "1.3 > *"
     def title = "Foundation CSS Framework for Grails"
     def description = '''\
