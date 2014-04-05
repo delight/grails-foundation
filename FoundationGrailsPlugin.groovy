@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 class FoundationGrailsPlugin {
-    def version = "5.2.1"
-    def grailsVersion = "1.3 > *"
-    def title = "Foundation CSS Framework for Grails"
-    def description = '''\
+	def version = "5.2.2"
+	def grailsVersion = "1.3 > *"
+	def title = "Foundation CSS Framework for Grails"
+	def description = '''\
 Provides the Foundation CSS framework resources. Foundation is an easy to use, powerful, and flexible framework for building prototypes and production code on any kind of device.
 It integrates nicely with the resources plugin.
 '''
 
-    def documentation = "http://grails.org/plugin/foundation"
+	def documentation = "http://grails.org/plugin/foundation"
 
-    def license = "APACHE"
-    def developers = [
-        [name: "Konstantinos Kostarellis", email: "kosta.grails@gmail.com"]
-    ]
-    def issueManagement = [system: "GITHUB", url: "https://github.com/delight/grails-foundation/issues"]
-    def scm = [url: "https://github.com/delight/grails-foundation"]
+	def license = "APACHE"
+	def developers = [
+	    [name: "Konstantinos Kostarellis", email: "kosta.grails@gmail.com"]
+	]
+	def issueManagement = [system: "GITHUB", url: "https://github.com/delight/grails-foundation/issues"]
+	def scm = [url: "https://github.com/delight/grails-foundation"]
 }
